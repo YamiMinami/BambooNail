@@ -3,8 +3,10 @@ const app = express();
 
 app.set("view engine", "ejs");
 app.set("port", 3000);
+app.use(express.static("public"))
 
 app.get("/",(req, res)=>{
+    console.log("Received GET request for /");
     res.render("index");
 })
 

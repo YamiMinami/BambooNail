@@ -19,3 +19,15 @@ body {
 
 /* Navbar */
 
+header {
+    grid-area: Header;
+}
+
+main {
+    grid-area: Main;
+}
+
+footer {
+    grid-area: Footer;
+}
+
