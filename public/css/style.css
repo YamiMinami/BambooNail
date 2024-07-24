@@ -17,8 +17,6 @@ body {
     color: white;
 }
 
-/* Navbar */
-
 header {
     grid-area: Header;
 }
@@ -29,5 +27,16 @@ main {
 
 footer {
     grid-area: Footer;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation {
+    
 }
 
