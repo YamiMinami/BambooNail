@@ -1,15 +1,25 @@
-import express from "express";
-const app = express();
+import express, { Express } from "express";
+import dotenv from "dotenv";
+import path from "path";
+
+dotenv.config();
+
+const app : Express = express();
 
 app.set("view engine", "ejs");
-app.set("port", 3000);
-app.use(express.static("public"))
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public")));
+app.set("views", path.join(__dirname, "views"));
 
-app.get("/",(req, res)=>{
-    console.log("Received GET request for /");
-    res.render("index");
-})
+app.set("port", process.env.PORT ?? 3000);
 
-app.listen(app.get("port"), () =>
-console.log("[server] http://localhost:" + app.get("port"))
-);
+app.get("/", (req, res) => {
+    res.render("index", {
+        title: "Bamboo Nail",
+    })
+});
+
+app.listen(app.get("port"), () => {
+    console.log("Server started on http://localhost:" + app.get("port"));
+});
