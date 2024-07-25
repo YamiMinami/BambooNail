@@ -21,8 +21,30 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    background-color: 	#e7e0ce;
+    padding: 10px 0 10px 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
 }
 
 header {
