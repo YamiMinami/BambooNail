@@ -18,13 +18,23 @@ body {
 
 /* Navbar */
 
+#title {
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    padding-left: 2em;
+}
+
+#logo {
+    width: 10em;
+}
+
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: 	#e7e0ce;
-    padding: 10px 0 10px 0;
-    position: relative;
+    padding: 5px 0 5px 0;
+    z-index: 1000;
 }
 
 .navbar ul {
@@ -40,7 +50,7 @@ body {
 }
 
 .navbar li {
-    margin: 0 20px;
+    margin: 0 30px;
 }
 
 .navbar a:hover {
@@ -48,8 +58,9 @@ body {
 }
 
 #banner {
-    object-fit: contain;
+    object-fit: cover;
     width: 100vw;
+    height: auto;
     margin-top: -120px;
 }
 

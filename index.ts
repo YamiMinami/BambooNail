@@ -20,6 +20,24 @@ app.get("/", (req, res) => {
     })
 });
 
+app.get("/about", (req, res) => {
+    res.render("about", {
+        title: "about",
+    })
+});
+
+app.get("/catalog", (req, res) => {
+    res.render("catalog", {
+        title: "catalog",
+    })
+});
+
+app.get("/contact", (req, res) => {
+    res.render("contact", {
+        title: "contact",
+    })
+});
+
 app.listen(app.get("port"), () => {
     console.log("Server started on http://localhost:" + app.get("port"));
 });
