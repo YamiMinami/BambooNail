@@ -47,6 +47,11 @@ body {
     text-decoration: underline;
 }
 
+#banner {
+    object-fit: contain;
+    width: 100vw;
+}
+
 header {
     grid-area: Header;
 }
