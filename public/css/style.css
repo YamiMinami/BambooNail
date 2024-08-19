@@ -26,8 +26,8 @@ header {
 }
 
 #title {
-    font-family:'Times New Roman', Times, serif;
-    color: white;
+    font-family:"Gloock", "serif";
+    color: black;
     padding-left: 2em;
     font-size: 45px;
 }
@@ -51,12 +51,13 @@ header {
 }
 
 .navbar a {
-    color: white;
+    font-family: "Lexend","sans-serif";
+    color: #989D9D;
     text-decoration: none;
     padding: 7px 10px;
     background-color: rgba(0, 0, 0, 0); 
     border-radius: 20px;
-    transition: transform 300ms ease-in-out, font-size 300ms ease-in-out, background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
 }
 
 .navbar li {
@@ -64,8 +65,6 @@ header {
 }
 
 .navbar a:hover {
-    font-size: larger;
-    transform: scale(1,2);
     background-color: rgb(158, 161, 128); 
 }
 
@@ -93,10 +92,82 @@ img {
 #banner {
     margin-top: -5%;
     height: 500px;
-    background: linear-gradient(to top,rgba(183,185,163, 1.5),rgba(255, 225, 255, 0), rgba(183,185,163, 1.5)), 
+    background: linear-gradient(to top,rgba(241, 254, 252, 1),rgba(255, 225, 255, 0), rgba(241, 254, 252, 1.5)), 
                 url('../assets/Bamboo.png'); 
     background-size: cover; 
     background-position: center; 
+}
+
+#landing-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -12rem;
+    background: linear-gradient(to bottom,rgba(241, 254, 252, 0), rgba(241, 254, 252, 1.5),rgba(241, 254, 252, 1.5)); 
+}
+
+#intro {
+    font-size: 3.4rem;
+    font-family: "Gloock";
+    margin: 0 30% 2% 30%;
+    text-align: center;
+}
+
+#intro-subtext {
+    font-size: 19px;
+    color: #838787;
+    margin: 0 32% 1% 32%;
+    text-align: center;
+}
+
+button {
+    background-color: #ffffff;
+    color: #939296;
+    padding: 19px 47px 19px 47px;
+    border: none;
+    font-size: 16px;
+    margin: 15px;
+}
+
+button:nth-child(2) {
+    padding: 19px 37px 19px 37px;
+    background-color: black;
+}
+
+#intro-subtext2 {
+    font-size: 16px;
+    color: #A6B0AF;
+    font-family: "Lexend", "sans-serif";
+    margin-bottom: 125px;
+    margin-top: 25px;
+}
+
+#intro-image-container {
+    display: flex;
+    padding: 0 50px 0 50px;
+    background-color: rgba(241, 254, 252);
+}
+
+.intro-images {
+    width: 50%;
+    height: auto;
+}
+
+#intro-subtitle {
+    font-size: 32px;
+    text-align: center;
+    font-family: "Gloock", serif;
+    background-color: rgba(241, 254, 252);
+    padding: 2em 0 2em 0;
+}
+
+#intro-subtitle2 {
+    font-size: 32px;
+    text-align: center;
+    font-family: "Gloock", serif;
+    padding: 2em 0 2em 0;
 }
 
 #nail-container {
@@ -106,20 +177,61 @@ img {
     align-items: center;
     padding: 1% 10% 5% 10%;
     gap: 50px;
-    background: linear-gradient(to bottom, rgba(183, 185, 163, 1.5), rgb(255, 255, 255), rgba(183, 185, 163, 1.5));
+}
+
+#title-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 10% 5% 10%;
+    gap: 50px;
+    background-color: rgba(241, 254, 252);
+    color:#717B77;
+    font-family: "Lexend", sans-serif;
 }
 
 .nail-item {
-    flex: 1 1 150px;
-    box-shadow: 5px 5px 5px rgba(183, 185, 163, 1);
+    flex: 1 1 200px;
 }
 
-.text {
-    padding: 1% 10% 1% 10%;
-    background: linear-gradient(to bottom, rgba(183, 185, 163, 1), rgba(183, 185, 163, 1));;
-    color: white;
-    font-size: 30px;
+#advertise-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 4rem;
+    background-color: rgba(241, 254, 252);
+
 }
+
+.nail-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.nail-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.nail-content h2, .nail-content p {
+    margin-left: 10%;
+}
+
+.nail-content h2 {
+    font-family: "Gloock", serif;
+    font-size: 32pt;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.nail-content p {
+    font-family: "Lexend", sans-serif;
+    font-size: 16px;
+    color: #717B77;
+}
+
 
 .prize-container {
     display: flex;
