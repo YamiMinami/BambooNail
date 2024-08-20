@@ -194,29 +194,32 @@ button:nth-child(2) {
     flex: 1 1 200px;
 }
 
-#advertise-container {
+.ad-container {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 4rem;
+    padding: 0rem;
     background-color: rgba(241, 254, 252);
-
+    gap: 2rem;
 }
 
-.nail-image {
-    width: 100%;
+.ad-image {
+    width: 50%;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .nail-content {
+    width: 50%;
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
 .nail-content h2, .nail-content p {
-    margin-left: 10%;
+    margin-left: 0%;
+    margin-right: 10%
 }
 
 .nail-content h2 {
