@@ -17,6 +17,11 @@ body {
     grid-template-rows: 5% auto auto;
 }
 
+button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 /* Navbar */
 
 header {
@@ -66,6 +71,7 @@ header {
 
 .navbar a:hover {
     background-color: rgb(158, 161, 128); 
+    color: white;
 }
 
 header {
@@ -188,26 +194,31 @@ button:nth-child(2) {
     background-color: rgba(241, 254, 252);
     color:#717B77;
     font-family: "Lexend", sans-serif;
+    margin-bottom: 4rem;
 }
 
 .nail-item {
     flex: 1 1 200px;
+    max-width: 400px;
 }
 
 .ad-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 4rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 0rem;
     padding: 0rem;
     background-color: rgba(241, 254, 252);
-    gap: 2rem;
 }
 
 .ad-image {
     width: 50%;
     height: auto;
-    object-fit: contain;
+}
+
+.ad-image img {
+    width: auto;
+    max-height: 50%;
 }
 
 .nail-content {
@@ -218,15 +229,14 @@ button:nth-child(2) {
 }
 
 .nail-content h2, .nail-content p {
-    margin-left: 0%;
-    margin-right: 10%
+    margin-left: 20%;
 }
 
 .nail-content h2 {
     font-family: "Gloock", serif;
     font-size: 32pt;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 .nail-content p {
@@ -235,22 +245,67 @@ button:nth-child(2) {
     color: #717B77;
 }
 
+#ad-container2 {
+    color: #717B77;
+    font-family: "Lexend";
+    text-align: center;
+    padding: 5rem 0 5rem 0;
+}
 
-.prize-container {
+#ad-container3 {
     display: flex;
-    align-items: center;
+    justify-content: space-around;
     flex-flow: row wrap;
-    justify-content: space-between; 
+    align-items: center;
+    padding: 1% 10% 5% 10%;
+    gap: 50px;
 }
 
-.prize-container img {
-    width: 500px;
-    height: auto;
-    max-width: 100%; 
+.ad-content3 {
+    flex: 1 1 150px;
+    max-width: 300px;
 }
 
-.prize-items {
-    padding: 1% 10%;
-    flex: 1; 
-    min-width: 200px; 
+.green-stroke {
+    padding: 40px;
+    background-color:  rgba(241, 254, 252);
+    width: 100%;
+}
+
+#ad-container4 {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+#ad-container4 h3 {
+    font-family: "Gloock", serif;
+    font-size: 31px;
+    margin-bottom: 1rem;
+}
+
+#ad-container4 p {
+    font-family: "Lexend", sans-serif;
+    font-size: 15;
+    color: #838787;
+}
+
+#ad-container4 h4 {
+    font-family: "Lexend", sans-serif;
+    font-size: 13px;
+    color: #717B77;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+}
+
+#indulge-button{
+    padding: 10px 25px 10px 25px;
+    background-color: black;
+    margin: 0;
+    margin-top: .4rem;
+}
+
+footer {
+    background-color:  rgba(241, 254, 252) ;
+    color: rgba(241, 254, 252);
 }
